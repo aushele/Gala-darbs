@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- jāpapildina meklētāja vārdi-->
+    <meta name="keywords" content="ģeogrāfija, statistika, iedzīvotāju skaits, iedzīvotāju blīvums, IKP">
+    <meta name="description" content="Skolēnu stūrītis">
+    <meta name="author" content="Ieva Urbāne">
+    <title>Skolēnu stūrītis</title>
+    <!--Bootstrap CSS
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <!--Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Glory">
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <link href="../script.js" rel="stylesheet" type="text/css" />
+    <link href="kontakti.php">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul class="top">
+                <li class="virsraksts">
+                    <h1>Skolēnu stūrītis</h1>
+                </li>
+                <li>
+                    <div class="dropdown" id="flex">
+                        <button class="dropbtn" class="menu" id=flex><img src=../images/menu.jpg width="40" height="auto"></button>
+                        <div class="dropdown-content">
+                            <a href="../index.html">Sākums</a>
+                            <a href="saites.html">Noderīgas saites</a>
+                            <a href="kontakti.html">Kontakti</a>
+                            <a href="#">Viegli lasīt</a>
+                        </div>
+                    </div>
+                    <li>
+                        <p class="valoda">LV</p>
+                    </li>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="forma">Kontakti</h2>
+
+        <div class="forma" id="forma">
+            <form action="kontakti.php" method="POST" action="<?php echo htmlspecialchars('kontakti.php'); ?>">
+                <h3>Nosūti mums ziņu!</h3>
+
+                <label for="name"></label>
+                <input type="text " id="name " name="name" placeholder="Tavs vārds.. ">
+
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="E-pasts.. ">
+
+                <label for="zina"></label>
+                <textarea id="textarea" name="comment" placeholder="Tava ziņa.. " style="height:200px " cols="30" rows="8"></textarea>
+
+                <input type="submit" name="nosutit" value="Nosūtīt" id="submit" onclick="poga()">
+
+            </form>
+
+        </div>
+
+        <div class="forma">
+            <h4><img src="../images/Phone.svg">
+                <a href="tel:80000098"> 80000098</a>
+            </h4>
+            <h4><img src="../images/Mail.svg">
+                <a href="mailto:info@csp.lv"> info@csp.lv</a>
+            </h4>
+            <h4>
+                <img src="../images/Pin.svg "> Lāčplēša iela 1, Rīga, LV – 1301</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.4439857178404!2d24.115593315977655!3d56.95832688089298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfcedd07f57d%3A0xa7426847a6ee4d8f!2zTMSBxI1wbMSTxaFhIGllbGEgMSwgQ2VudHJhIHJham9ucywgUsSrZ2EsIExWLTEwMTA!5e0!3m2!1slv!2slv!4v1632672798407!5m2!1slv!2slv"
+                width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" class="karte"></iframe>
+        </div>
+    </main>
+    <footer>
+        <a class="autors ">© Ieva Urbāne</a>
+        <a class="autors " href="mailto:ieva.urbaane@gmail.com ">✉ ieva.urbaane@gmail.com</a>
+        <a class="autors " href="tel:+37126109019 ">☎ +371 26109019</a>
+    </footer>
+</body>
+
+</html>
